@@ -8,10 +8,10 @@
 
 ```bash
 # Add the marketplace source
-/plugin marketplace add twofoldtech-dakota/cms-toolkit
+/plugin marketplace add twofoldtech-dakota/plugin-cms-toolkit
 
 # Install the plugin
-/plugin install cms-toolkit@twofoldtech-dakota-cms-toolkit
+/plugin install cms-toolkit@twofoldtech-dakota-plugin-cms-toolkit
 ```
 
 No configuration needed. The plugin auto-detects your CMS platform from project files.
