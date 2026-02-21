@@ -1,8 +1,10 @@
 # CMS Toolkit
 
-> Sitecore, Umbraco, and Optimizely expertise baked into Claude Code — scaffolding, content modeling, code review, and best practices enforcement for agency teams.
+> Sitecore, Umbraco, and Optimizely expertise baked into Claude Code — scaffolding, content modeling, accessibility scanning, security audits, code review, and best practices enforcement for agency teams.
 
-<!-- ![License: MIT](https://img.shields.io/badge/license-MIT-blue) -->
+![Version](https://img.shields.io/badge/version-1.0.0-green)
+![License: MIT](https://img.shields.io/badge/license-MIT-blue)
+![Claude Code Plugin](https://img.shields.io/badge/Claude_Code-plugin-blueviolet)
 
 ## 30-Second Setup
 
@@ -26,6 +28,8 @@ Open a Sitecore, Umbraco, or Optimizely project and start working — the toolki
 |-----------|------|-------------|
 | Skill | `/plugin-cms-toolkit:scaffold` | Generates components, content types, controllers, and pages |
 | Skill | `/plugin-cms-toolkit:content-model` | Designs and audits content architectures |
+| Skill | `/plugin-cms-toolkit:a11y` | WCAG 2.2 AA accessibility scanner |
+| Skill | `/plugin-cms-toolkit:security` | OWASP Top 10 + CMS security audit + dependency CVE scan |
 | Skill | `cms-detect` | Auto-detects your CMS platform (runs in background) |
 | Skill | `sitecore` | Deep Sitecore XM Cloud / XP expertise (auto-invoked) |
 | Skill | `umbraco` | Deep Umbraco v14–17 expertise (auto-invoked) |
@@ -84,6 +88,32 @@ Audit an existing content model for issues:
 /plugin-cms-toolkit:content-model audit
 ```
 
+### Accessibility Scanner
+
+Run a WCAG 2.2 AA audit against your CMS templates, components, and content type definitions:
+
+```
+/plugin-cms-toolkit:a11y                    # Full scan
+/plugin-cms-toolkit:a11y views              # Razor views and templates only
+/plugin-cms-toolkit:a11y components         # React/Next.js components only
+/plugin-cms-toolkit:a11y content-types      # Content model accessibility only
+```
+
+Checks for missing alt text, ARIA violations, keyboard traps, heading hierarchy, contrast patterns, focus management, and CMS-specific issues like image fields without alt text companions.
+
+### Security Audit
+
+Audit your CMS project for OWASP Top 10 vulnerabilities, CMS-specific security issues, and dependency CVEs:
+
+```
+/plugin-cms-toolkit:security                # Full audit (code + deps + config)
+/plugin-cms-toolkit:security code           # Source code analysis only
+/plugin-cms-toolkit:security deps           # Dependency vulnerability scan only
+/plugin-cms-toolkit:security config         # Configuration review only
+```
+
+Scans for injection, broken access control, exposed secrets, insecure deserialization, missing auth, and runs `dotnet list package --vulnerable` / `npm audit` for known CVEs.
+
 ### Background Expertise
 
 Three platform skills activate automatically when you're working in a CMS project. They provide:
@@ -137,7 +167,9 @@ plugin-cms-toolkit/
 │   ├── umbraco/                 # Umbraco expertise + patterns + API ref
 │   ├── optimizely/              # Optimizely expertise + patterns + API ref
 │   ├── scaffold/                # /scaffold command
-│   └── content-model/           # /content-model command
+│   ├── content-model/           # /content-model command
+│   ├── a11y/                    # WCAG 2.2 AA accessibility scanner
+│   └── security/                # OWASP + CMS security audit
 ├── agents/
 │   └── cms-reviewer.md          # CMS-aware code reviewer
 └── hooks/
