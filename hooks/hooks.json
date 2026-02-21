@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "Check if the code being written follows CMS best practices. Look for these issues and ONLY flag them if found (return {\"ok\": true} if none apply):\n\n1. Hardcoded GUIDs or content IDs used to reference CMS content items\n2. Connection strings or API keys written directly in code (not environment variables)\n3. Business logic placed inside Razor views (.cshtml) or JSX templates instead of controllers/services\n4. Content queries inside loops (N+1 pattern) — e.g., loading child items one by one\n5. ServiceLocator usage instead of dependency injection (Optimizely)\n6. Direct IContentService usage for read-only operations when IPublishedContent should be used (Umbraco)\n7. Missing null checks on content references before loading\n\nIf any issue is found, return {\"ok\": false, \"reason\": \"<specific issue found>\"}. Be specific about the line and problem. Do not flag code that is acceptable — only flag clear violations.",
+            "statusMessage": "Checking CMS patterns..."
+          }
+        ]
+      }
+    ]
+  }
+}
