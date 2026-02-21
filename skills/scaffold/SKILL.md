@@ -1,6 +1,6 @@
 ---
 name: scaffold
-description: Scaffolds CMS components, content types, controllers, and page types for Sitecore, Umbraco, or Optimizely. Detects the CMS platform automatically and generates platform-specific code. Usage - /cms-toolkit:scaffold component HeroBlock
+description: Scaffolds CMS components, content types, controllers, and page types for Sitecore, Umbraco, or Optimizely. Detects the CMS platform automatically and generates platform-specific code. Usage - /plugin-cms-toolkit:scaffold component HeroBlock
 user-invocable: true
 argument-hint: "<type> <name> [options]"
 allowed-tools: Read, Write, Grep, Glob, Bash, Edit
@@ -13,17 +13,17 @@ You generate production-ready code for CMS projects. You detect the CMS platform
 ## Usage
 
 ```
-/cms-toolkit:scaffold <type> <name>
+/plugin-cms-toolkit:scaffold <type> <name>
 ```
 
 **Types:** `component`, `content-type`, `controller`, `page`
 
 **Examples:**
 ```
-/cms-toolkit:scaffold component HeroBanner
-/cms-toolkit:scaffold content-type ArticlePage
-/cms-toolkit:scaffold controller Search
-/cms-toolkit:scaffold page LandingPage
+/plugin-cms-toolkit:scaffold component HeroBanner
+/plugin-cms-toolkit:scaffold content-type ArticlePage
+/plugin-cms-toolkit:scaffold controller Search
+/plugin-cms-toolkit:scaffold page LandingPage
 ```
 
 ## Step 1: Detect CMS

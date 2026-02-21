@@ -11,7 +11,7 @@
 /plugin marketplace add twofoldtech-dakota/plugin-cms-toolkit
 
 # Install the plugin
-/plugin install cms-toolkit@twofoldtech-dakota-plugin-cms-toolkit
+/plugin install plugin-cms-toolkit@twofoldtech-dakota
 ```
 
 No configuration needed. The plugin auto-detects your CMS platform from project files.
@@ -24,8 +24,8 @@ Open a Sitecore, Umbraco, or Optimizely project and start working — the toolki
 
 | Component | Name | What It Does |
 |-----------|------|-------------|
-| Skill | `/cms-toolkit:scaffold` | Generates components, content types, controllers, and pages |
-| Skill | `/cms-toolkit:content-model` | Designs and audits content architectures |
+| Skill | `/plugin-cms-toolkit:scaffold` | Generates components, content types, controllers, and pages |
+| Skill | `/plugin-cms-toolkit:content-model` | Designs and audits content architectures |
 | Skill | `cms-detect` | Auto-detects your CMS platform (runs in background) |
 | Skill | `sitecore` | Deep Sitecore XM Cloud / XP expertise (auto-invoked) |
 | Skill | `umbraco` | Deep Umbraco v14–17 expertise (auto-invoked) |
@@ -42,10 +42,10 @@ Open a Sitecore, Umbraco, or Optimizely project and start working — the toolki
 Generate platform-specific, production-ready code that matches your project's existing conventions:
 
 ```
-/cms-toolkit:scaffold component HeroBanner
-/cms-toolkit:scaffold content-type ArticlePage
-/cms-toolkit:scaffold controller Search
-/cms-toolkit:scaffold page LandingPage
+/plugin-cms-toolkit:scaffold component HeroBanner
+/plugin-cms-toolkit:scaffold content-type ArticlePage
+/plugin-cms-toolkit:scaffold controller Search
+/plugin-cms-toolkit:scaffold page LandingPage
 ```
 
 The scaffold skill:
@@ -59,7 +59,7 @@ The scaffold skill:
 Plan content architectures interactively or from a description:
 
 ```
-/cms-toolkit:content-model blog with categories and authors
+/plugin-cms-toolkit:content-model blog with categories and authors
 ```
 
 Outputs a visual content type diagram with field mappings, then generates `/scaffold` commands to build it:
@@ -81,7 +81,7 @@ Outputs a visual content type diagram with field mappings, then generates `/scaf
 Audit an existing content model for issues:
 
 ```
-/cms-toolkit:content-model audit
+/plugin-cms-toolkit:content-model audit
 ```
 
 ### Background Expertise

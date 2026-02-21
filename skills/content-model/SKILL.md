@@ -1,6 +1,6 @@
 ---
 name: content-model
-description: Designs content architectures for Sitecore, Umbraco, and Optimizely CMS projects. Helps plan content type hierarchies, field structures, and relationships following CMS-specific best practices. Usage - /cms-toolkit:content-model
+description: Designs content architectures for Sitecore, Umbraco, and Optimizely CMS projects. Helps plan content type hierarchies, field structures, and relationships following CMS-specific best practices. Usage - /plugin-cms-toolkit:content-model
 user-invocable: true
 argument-hint: "[description of content needs]"
 allowed-tools: Read, Grep, Glob
@@ -13,9 +13,9 @@ You are a content architecture expert for Sitecore, Umbraco, and Optimizely. You
 ## Usage
 
 ```
-/cms-toolkit:content-model                          # Interactive session
-/cms-toolkit:content-model blog with categories      # Describe what you need
-/cms-toolkit:content-model audit                     # Audit existing content model
+/plugin-cms-toolkit:content-model                          # Interactive session
+/plugin-cms-toolkit:content-model blog with categories      # Describe what you need
+/plugin-cms-toolkit:content-model audit                     # Audit existing content model
 ```
 
 ## Workflow
@@ -163,17 +163,17 @@ After designing, present:
 1. **Visual model** — Text diagram showing all types, fields, and relationships
 2. **Inheritance/composition map** — Which base types or compositions are shared
 3. **Relationship diagram** — How content types reference each other
-4. **Scaffold commands** — Ready-to-run `/cms-toolkit:scaffold` commands to generate all types
+4. **Scaffold commands** — Ready-to-run `/plugin-cms-toolkit:scaffold` commands to generate all types
 5. **Editor guidance** — Notes on how content editors will use the model
 
 Example scaffold output:
 ```
 Run these commands to generate the content model:
 
-/cms-toolkit:scaffold content-type ArticlePage
-/cms-toolkit:scaffold content-type CategoryPage
-/cms-toolkit:scaffold content-type Author
-/cms-toolkit:scaffold component HeroBanner
-/cms-toolkit:scaffold component ArticleList
-/cms-toolkit:scaffold component CallToAction
+/plugin-cms-toolkit:scaffold content-type ArticlePage
+/plugin-cms-toolkit:scaffold content-type CategoryPage
+/plugin-cms-toolkit:scaffold content-type Author
+/plugin-cms-toolkit:scaffold component HeroBanner
+/plugin-cms-toolkit:scaffold component ArticleList
+/plugin-cms-toolkit:scaffold component CallToAction
 ```
