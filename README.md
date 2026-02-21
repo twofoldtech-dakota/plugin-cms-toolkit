@@ -62,7 +62,7 @@ Plan content architectures interactively or from a description:
 /plugin-cms-toolkit:content-model blog with categories and authors
 ```
 
-Outputs a visual content type diagram with field mappings, then generates `/scaffold` commands to build it:
+Outputs a visual content type diagram with field mappings, then generates `/plugin-cms-toolkit:scaffold` commands to build it:
 
 ```
 [Page Type] Article Page
@@ -128,7 +128,7 @@ A `PreToolUse` hook runs on every `Edit` and `Write` operation, catching common 
 ## How It Works
 
 ```
-cms-toolkit/
+plugin-cms-toolkit/
 ├── .claude-plugin/
 │   └── plugin.json              # Plugin metadata
 ├── skills/
