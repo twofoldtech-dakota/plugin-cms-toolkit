@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh api:*)",
+      "Bash(python -m base64:*)",
+      "WebFetch(domain:raw.githubusercontent.com)"
+    ]
+  }
+}

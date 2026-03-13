@@ -1,0 +1,18 @@
+{
+  "name": "twofoldtech-dakota",
+  "owner": {
+    "name": "Dakota Smith"
+  },
+  "plugins": [
+    {
+      "name": "plugin-cms-toolkit",
+      "source": ".",
+      "description": "Sitecore, Umbraco, and Optimizely expertise — scaffolding, content modeling, accessibility scanning, security audits, code review, and best practices enforcement",
+      "version": "1.0.0",
+      "author": {
+        "name": "Dakota Smith"
+      },
+      "category": "development"
+    }
+  ]
+}
