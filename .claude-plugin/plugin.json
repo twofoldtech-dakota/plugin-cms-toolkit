@@ -1,7 +1,7 @@
 {
   "name": "plugin-cms-toolkit",
   "description": "Claude Code plugin for Sitecore, Umbraco, and Optimizely CMS development — scaffolding, content modeling, accessibility scanning, security audits, best practices, and code generation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Dakota Smith"
   },

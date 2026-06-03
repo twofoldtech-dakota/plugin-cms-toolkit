@@ -8,7 +8,7 @@
       "name": "plugin-cms-toolkit",
       "source": "./",
       "description": "Sitecore, Umbraco, and Optimizely expertise — scaffolding, content modeling, accessibility scanning, security audits, code review, and best practices enforcement",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "Dakota Smith"
       },
