@@ -2,7 +2,7 @@
 
 > Sitecore, Umbraco, and Optimizely expertise baked into Claude Code — scaffolding, content modeling, accessibility scanning, security audits, code review, and best practices enforcement for agency teams.
 
-![Version](https://img.shields.io/badge/version-1.0.0-green)
+![Version](https://img.shields.io/badge/version-1.0.1-green)
 ![License: MIT](https://img.shields.io/badge/license-MIT-blue)
 ![Claude Code Plugin](https://img.shields.io/badge/Claude_Code-plugin-blueviolet)
 
@@ -13,7 +13,7 @@
 /plugin marketplace add twofoldtech-dakota/plugin-cms-toolkit
 
 # Install the plugin
-/plugin install plugin-cms-toolkit@twofoldtech-dakota
+/plugin install plugin-cms-toolkit@twofoldtech-plugins
 ```
 
 No configuration needed. The plugin auto-detects your CMS platform from project files.
